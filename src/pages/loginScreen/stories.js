@@ -2,7 +2,7 @@ import React from 'react';
 import LoginScreen from './';
 
 export default {
-  title: 'screen/Login',
+  title: 'screen/LoginScreen',
   component: LoginScreen,
 };
 

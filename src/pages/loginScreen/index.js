@@ -2,19 +2,17 @@ import React from 'react';
 import Login from '@bit/smart-solution-4u.ss4u-components.form.login';
 import DoubleColumn from '@bit/smart-solution-4u.ss4u-components.layout.double-column';
 
-import { useTheme } from '@material-ui/core/styles';
+import logo from '../../../public/assets/img/logo.png'
+
+const { REACT_APP_NAME } = process.env;
 
 
 
 const LoginScreen = () => {
 
-    const theme = useTheme();
-
-    console.log("theme Atual =>", theme)
-
     return (
-        <DoubleColumn>
-            <Login></Login>
+        <DoubleColumn logo={logo}>
+            <Login title={REACT_APP_NAME} ></Login>
         </DoubleColumn>
     );
 }

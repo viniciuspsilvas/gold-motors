@@ -1,5 +1,7 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 import green from "@material-ui/core/colors/green";
+import blue from "@material-ui/core/colors/blue";
+import yellow from "@material-ui/core/colors/yellow";
 import purple from "@material-ui/core/colors/purple";
 
 const primaryGreen = green[500];
@@ -14,13 +16,13 @@ export const overridings = {
   palette: {
     primary: {
       light: accentGreen,
-      main: primaryGreen,
+      main: blue[300],
       dark: darkGreen,
       contrastText: "#fff"
     },
     secondary: {
       light: accentPurple,
-      main: primaryPurple,
+      main: yellow[300],
       dark: darkPurple,
       contrastText: "#fff"
     }
